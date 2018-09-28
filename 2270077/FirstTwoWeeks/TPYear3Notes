@@ -1,0 +1,145 @@
+	Theoretical Physics Computer Lab Notebook
+	25.9.2018 Waltteri Leinonen 2270077
+
+Day 1 - 11:35 25.9.2018
+Starting up the Linux environment, reading through the course notes...
+Created a personal directory for the time being, in Desktop, called "2270077". I'll move that out to Github once it's set up, or in the worst case scenario, store it on a USB flash drive.
+Tried cloning my Github repo, first config'd myself, but I'm getting a funny error
+
+	[guest@localhost 2270077]$ git clone https://github.com/Walllu/TPYear3.git
+	Cloning into 'TPYear3'...
+	fatal: unable to access 'https://github.com/Walllu/TPYear3.git/': Failed connect to github.com:443; Connection refused
+
+I'll just ignore that for now...
+
+11:46
+Following along with the 1.2 --> "pwd" and "man pages"
+1.2 TASK go to the "pwd" man page using "man pwd" and scroll up/down, leaving with "Q"
+1.2 TASK use "cd .." to go up a directory. This would take me up to "Desktop", I can see this with pwd.
+1.2 TASK use "ls" to list the contents of a directory. "ls /l" is for "long form" so to view the contents of the "home" directory, we can just type>
+	[guest@localhost 2270077]$ ls -l /home
+	total 4
+	drwx------. 32 guest guest 4096 Sep 25 10:41 guest
+Learning about the "cp" and "mv" commands. I didn't know for sure about how user permissions on files and directories affect these commands, but it says here clearly that it can be affected. Also, the wildcard "*" is a handy thing that I forgot about. Is this "globbing" or am I remembering something else... Anyways, regex would be cool to have in terminal.
+I'm gonna play around with EMACs a bit, I think notetaking might be nicer in ORG-mode than in a plain text file... Ok, I gave up pretty quickly. I'll look into that later, I need to brush up on EMACs but now's no time to do that.
+
+12:00
+Continuing on.
+1.2 TASK exploring the man pages of the commands in Table 1. I'll have a look at chmod, grep, top
+1.3 Your path ----------------------------------------------------------------------------------
+Found a typo< "indicted" --> "indicated"
+1.3 TASK type "echo $PATH" to see what happens. 
+	[guest@localhost 2270077]$ echo $PATH
+	/home/guest/bin:/usr/lib64/qt-3.3/bin:/home/guest/perl5/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin
+These are all the directory locations (":" separated) that Linux looks into when you type in a program name i.e. a command. These are where all of the traditional Linux terminal commands are stored.
+You can run the bash script 'PATH="$PATH:$HOME/mydirectory"' to add a directory to the path.
+1.3 TASK add a directory to your home directory, called "bin", and add that to $PATH with the above.
+There's already a directory called "bin" there, containing some empty shell scripts. I did "rm -r ./bin" and made a new one (though tbh I didn't have to), and now I'm gonna run the above bash script. I'm unsure now, I have it in the PATH variable, but it says>
+	[guest@localhost ~]$ $PATH
+	bash: /home/guest/bin:/usr/lib64/qt-3.3/bin:/home/guest/perl5/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/guest/bin: No such file or directory
+so yeah, a little conflicted. How can I remove the last item in this string?
+
+12:17 section 1.4
+Quick run down of neat tricks in BASH terminal, including autocomplete, command history, and piping/output.
+
+12:20 Chapter 2, section 2.1
+Oh! We're gonna use EMACs, wonderful. I've used VIM so I might skip this section, but should I...?
+Yeah. I'll look at this later......
+
+12:22 Chapter 3 Automation and Coding: Shell Scripts, C++
+3 TASK check to see if the "bin" we made earlier is in the path. I'm a little skeptical, given the earlier error-y message appended to the end of the PATH variable string. Let's see. Looking again, it says "No directory" but checking with "ls -l" we can clearly see it's there, and it's a directory, wth
+Ok, well, I'm going to add the code to my bashrc file.
+3 TASK navigate to the web page linked to in the PDF... http://www.linuxcommand.org/lc3_writing_shell_scripts.php
+
+12:48
+I'm reading through the section on "here" scripts in BASH, and it's pretty interesting. I'm just reading through this stuff, because most of it isn't new per se, but revising is always good and mostly necessary.
+"Stubbing" is an interesting programming technique, though not really something I realized had a name, though, also, perhaps this author just made that name up for himself, it's such a common thing to do while developing a program.
+In the "Watch Your Script Run" section in "Stay Out Of Trouble", I didn't know it was possible to get your BASH script to display the "expanded" lines of code while it's running. It's called "tracing" apparently, which is pretty cool!
+
+13:15
+3 TASK write a shell script called "welcome.sh" that can do all the things a real boy can do. I did it, and it works as it should (using the "date" command)
+3 TASK go back to the beginning and read the script. Do you understand it? Yes.
+
+13:20 Compiling C++ programs
+You can compile C++ programs in BASH by using the "g++" command. "gcc" is for C.
+
+14:07 Back from lunch. So it seems compiling in g++ is pretty much the same as gcc.
+3.2 TASK compile some code... I did it! Though the "c.in" call makes the program (I guess) look for user input, which is a little annoying and presumptuous for a "hello world" program I think. So I removed it, without errors, and recompiled it, and so I'm now happy with my C++ skills.
+
+14:16 Chapter 4 Visualizing Data: Gnuplot
+Now comes the good stuff! 
+4 TASK read the following web pages on gnuplot 
+http://web.archive.org/web/20100726165306/ <-------------------- Also this one!
+http://t16web.lanl.gov/Kawano/gnuplot/index-e.html <------------ This one seems to be broken!
+This is going well.... 
+4 TASK copy the C++ file from the web page, and compile it. Run the program, producing the data.
+4 TASK write a gnuplot script to plot the data in your "dat" file, and output as an "encapsulated postscript" file called "gaussian.eps" or just save as jpeg etc. etc.
+
+14:30
+Well, using other online resources (namely Google) I got something working. I used http://www.gnuplotting.org/plotting-data/  and, by using the C++ file in the course notes, I produced the Gaussian distributed data in a data file I called "out.dat", and used a strange incantation to product a nice gaussian distribution graph. The incantation is as follows...
+	gnuplot> set style line 1 \
+	>linecolor rgb '#0060ad' \
+	>linetype 1 linewidth 2 \
+	>pointtype 7 pointsize 1.5
+	gnuplot> plot 'out.dat' with linespoints linestyle 1
+
+More resources I'm using:
+	http://gnuplot.sourceforge.net/demo/
+	https://www.cs.hmc.edu/~vrable/gnuplot/using-gnuplot.html
+	https://andy-carter.com/blog/automating-gnuplot-with-scripting
+	https://stackoverflow.com/questions/35785030/plot-multiple-datasets-from-one-file?rq=1
+
+4 TASK plot 3 gaussian distributions with same mean but different std.
+Ok, I'm doing something a little bit hacky, but at this point what can you expect. I'm modifying the code to do the same thing three times. Let's see... ok nevermind it won't work hmmmm...
+
+15:11
+I'm looking at some demos on the gnuplot web site, and found one for plotting multiple functions at the same time, but nothing necessarily for plotting multiple data sets at the same time. I'll continue investigating. I just found some information on StackOverflow on the formatting of the data sets. I'll modify the original code to do this, and see what happens.
+
+15:34
+Alright! I managed to modify the code, getting it to generate three gaussian distribution's worth of data, storing it all in the same file, and with the following gnuplot incantation, we get three gaussian distribution curves on the same plot!
+	set key autotitle columnheader
+	stats 'file.dat' using 0 nooutput
+	plot for [i=0:(STATS_blocks - 1)] 'file.dat' using 1:2 index i
+I can't figure out how to save the plot as a jpeg yet though...
+I just found a web page (http://www.math.utk.edu/~vasili/refs/How-to/gnuplot.print.html) with some tips on this, I'm going to try it out... Yay it works. Ok.
+So the following incantation is what I used to produce the "multig.png" file>
+	gnuplot> set term png
+	Terminal type set to 'png'
+	Options are 'nocrop font "/usr/share/fonts/dejavu/DejaVuSans.ttf,12" fontscale 1.0 size 640,480 '
+	gnuplot> set output "multig.png"
+	gnuplot> replot
+
+
+
+
+Thursday 27.9.2018 --
+Alright, looking back at what I did for the previous TASKs, I realize that I need to create a "gnuplot script" called "gaussian.gnu". I've made it for the single gaussian distribution case, now to do the same for the multiple gaussian distributions. OK! I got that working with some fanagling...
+
+12:06
+TASK similarly produce a 2D plot showing the gaussian distribution... How the heck can I do this.
+I guess it's a heatmap, so I'll have a look to see what I can find online.
+	http://lowrank.net/gnuplot/intro/basic-e.html
+I can't really figure it out. I'll ask for help.
+
+12:32
+In fact, I think I'll move onto the next section for now. I feel like I need to read up a bit more on gnuplot.
+
+The vector Gaussian distribution can be reexpressed in component form, and, in the numerator of the exponent, we are left with a vector dot product which simplifies the expression to a multivariable function of x and y. I'm going to redo the C++ code.
+
+14:50
+I finally finished the two dimensional gaussian distribution program and gnuplot. I simply made the output print into an X,Y,Z column, with rows separated by a empty string. In gnunplot, I followed the code in the gnuplot heatmap demo (http://gnuplot.sourceforge.net/demo/heatmaps.html) using that data format. I editted the "rgbformula" bit to "21,22,23" to get the same color scheme as well.
+
+14:58
+Time to look at the final task of this section.
+TASK play around with the data from the following url (http://www.christophenglert.co.uk/histograms.tar.gz) and create histograms. Doesn't work, but the stuff is on Moodle.
+
+I don't understand what this "mZZ" thing is that they mention, it's not quite clear from the text.
+
+
+TASK follow a tutorial to LaTeX.
+Alright, I'll leave that off for today. I'll continue reading at home.
+
+
+
+
+

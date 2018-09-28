@@ -1,0 +1,8110 @@
+%!PS-Adobe-2.0
+%%Title: bsm.1.ps
+%%Creator: gnuplot 4.6 patchlevel 2
+%%CreationDate: Thu Sep 27 14:14:50 2018
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 554 770
+%%Orientation: Landscape
+%%Pages: (atend)
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape true def
+/Level1 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 554 50 lineto 554 770 lineto 50 770 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 4.6 (September 2012)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray show grestore} {show} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Default Line colors
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default Line Types
+/LTw {PL [] 1 setgray} def
+/LTb {BL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [4 dl1 2 dl2] LC1 DL} def
+/LT2 {PL [2 dl1 3 dl2] LC2 DL} def
+/LT3 {PL [1 dl1 1.5 dl2] LC3 DL} def
+/LT4 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC5 DL} def
+/LT6 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 2 dl2 2 dl1 4 dl2] LC8 DL} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto gsave closepath fill grestore} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+ 2 lt
+	{/InterpretLevel1 true def}
+	{/InterpretLevel1 Level1 def}
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (bsm.1.ps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 4.6 patchlevel 2)
+  /Author (guest)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Thu Sep 27 14:14:50 2018)
+  /DOCINFO pdfmark
+end
+} ifelse
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1003 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.02) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1726 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.04) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2450 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.06) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3173 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.08) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3896 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.12) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+(-5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1262 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+(-4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1893 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+(-3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2525 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+(-2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3157 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+(-1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4420 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5052 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5684 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6315 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/deta_l \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+0 297 V
+126 0 V
+0 582 V
+127 0 V
+0 156 V
+126 0 V
+0 210 V
+126 0 V
+0 467 V
+127 0 V
+0 102 V
+126 0 V
+0 404 V
+126 0 V
+0 177 V
+127 0 V
+0 597 V
+126 0 V
+0 60 V
+126 0 V
+0 186 V
+127 0 V
+0 304 V
+126 0 V
+0 362 V
+127 0 V
+0 -504 V
+126 0 V
+0 -204 V
+126 0 V
+0 -15 V
+127 0 V
+0 -197 V
+126 0 V
+0 -143 V
+126 0 V
+0 -388 V
+127 0 V
+0 104 V
+126 0 V
+0 -779 V
+126 0 V
+0 -103 V
+127 0 V
+0 -302 V
+126 0 V
+0 -317 V
+126 0 V
+0 -238 V
+127 0 V
+0 -538 V
+126 0 V
+0 -280 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 2 2
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1148 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.05) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2016 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2883 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.15) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3751 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.25) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1683 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2736 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4841 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5894 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/dR_l1l2 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+126 0 V
+127 0 V
+126 0 V
+0 391 V
+126 0 V
+0 428 V
+127 0 V
+0 429 V
+126 0 V
+0 208 V
+126 0 V
+0 57 V
+127 0 V
+0 648 V
+126 0 V
+0 -544 V
+126 0 V
+0 -221 V
+127 0 V
+0 -25 V
+126 0 V
+0 -45 V
+126 0 V
+0 -86 V
+127 0 V
+0 -16 V
+126 0 V
+0 92 V
+126 0 V
+0 -78 V
+127 0 V
+0 -7 V
+126 0 V
+0 161 V
+126 0 V
+0 16 V
+127 0 V
+0 78 V
+126 0 V
+0 338 V
+126 0 V
+0 455 V
+127 0 V
+0 419 V
+126 0 V
+0 428 V
+127 0 V
+0 643 V
+126 0 V
+0 -887 V
+126 0 V
+0 -1379 V
+127 0 V
+0 -589 V
+126 0 V
+0 -258 V
+126 0 V
+0 -230 V
+127 0 V
+0 -132 V
+126 0 V
+0 -109 V
+126 0 V
+0 -45 V
+127 0 V
+0 -74 V
+126 0 V
+0 3 V
+126 0 V
+0 -48 V
+127 0 V
+0 2 V
+126 0 V
+0 -16 V
+126 0 V
+0 8 V
+127 0 V
+0 -14 V
+126 0 V
+126 0 V
+0 -1 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 3 3
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 714 M
+63 0 V
+6254 0 R
+-63 0 V
+546 714 M
+( 0.02) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1148 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.04) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1582 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.06) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2016 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.08) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2450 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2883 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.12) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3317 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.14) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3751 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.16) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4185 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.18) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1683 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2736 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4841 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5894 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/dR_l1l3 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+126 0 V
+127 0 V
+126 0 V
+0 500 V
+126 0 V
+0 374 V
+127 0 V
+0 92 V
+126 0 V
+0 384 V
+126 0 V
+0 -104 V
+127 0 V
+0 855 V
+126 0 V
+0 -645 V
+126 0 V
+0 -7 V
+127 0 V
+0 170 V
+126 0 V
+0 64 V
+126 0 V
+0 -39 V
+127 0 V
+0 337 V
+126 0 V
+0 5 V
+126 0 V
+0 157 V
+127 0 V
+0 10 V
+126 0 V
+0 277 V
+126 0 V
+0 208 V
+127 0 V
+0 304 V
+126 0 V
+0 96 V
+126 0 V
+0 375 V
+127 0 V
+0 -27 V
+126 0 V
+0 524 V
+127 0 V
+0 -64 V
+126 0 V
+0 -865 V
+126 0 V
+0 -1621 V
+127 0 V
+0 -430 V
+126 0 V
+0 -377 V
+126 0 V
+0 -101 V
+127 0 V
+0 -136 V
+126 0 V
+0 -127 V
+126 0 V
+0 -62 V
+127 0 V
+0 -57 V
+126 0 V
+0 -1 V
+126 0 V
+0 -32 V
+127 0 V
+0 -18 V
+126 0 V
+0 -5 V
+126 0 V
+0 -1 V
+127 0 V
+0 2 V
+126 0 V
+0 -7 V
+126 0 V
+0 -2 V
+127 0 V
+0 -3 V
+126 0 V
+0 -3 V
+126 0 V
+0 3 V
+127 0 V
+0 -3 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 4 4
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 762 M
+63 0 V
+6254 0 R
+-63 0 V
+546 762 M
+( 0.02) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1244 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.04) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1726 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.06) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2208 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.08) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2691 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3173 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.12) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3655 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.14) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4137 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.16) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.18) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1683 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2736 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4841 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5894 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/dR_l1l4 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+126 0 V
+127 0 V
+126 0 V
+0 518 V
+126 0 V
+0 568 V
+127 0 V
+0 87 V
+126 0 V
+0 70 V
+126 0 V
+0 309 V
+127 0 V
+0 31 V
+126 0 V
+0 83 V
+126 0 V
+0 223 V
+127 0 V
+0 11 V
+126 0 V
+0 280 V
+126 0 V
+0 -152 V
+127 0 V
+0 162 V
+126 0 V
+0 52 V
+126 0 V
+0 44 V
+127 0 V
+0 -20 V
+126 0 V
+0 498 V
+126 0 V
+0 253 V
+127 0 V
+0 -105 V
+126 0 V
+0 339 V
+126 0 V
+0 221 V
+127 0 V
+0 443 V
+126 0 V
+0 214 V
+127 0 V
+0 180 V
+126 0 V
+0 -448 V
+126 0 V
+0 -2280 V
+127 0 V
+0 -591 V
+126 0 V
+0 -299 V
+126 0 V
+0 -250 V
+127 0 V
+0 -158 V
+126 0 V
+0 -40 V
+126 0 V
+0 -108 V
+127 0 V
+0 -43 V
+126 0 V
+0 -19 V
+126 0 V
+0 -10 V
+127 0 V
+0 -36 V
+126 0 V
+0 4 V
+126 0 V
+0 -17 V
+127 0 V
+0 3 V
+126 0 V
+0 -16 V
+126 0 V
+0 6 V
+127 0 V
+0 -2 V
+126 0 V
+0 -5 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 5 5
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 714 M
+63 0 V
+6254 0 R
+-63 0 V
+546 714 M
+( 0.02) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1148 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.04) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1582 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.06) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2016 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.08) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2450 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2883 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.12) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3317 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.14) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3751 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.16) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4185 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.18) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1683 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2736 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4841 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5894 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/dR_l2l3 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+126 0 V
+127 0 V
+126 0 V
+0 494 V
+126 0 V
+0 381 V
+127 0 V
+0 114 V
+126 0 V
+0 159 V
+126 0 V
+0 232 V
+127 0 V
+0 97 V
+126 0 V
+0 91 V
+126 0 V
+0 100 V
+127 0 V
+0 13 V
+126 0 V
+0 80 V
+126 0 V
+0 207 V
+127 0 V
+0 671 V
+126 0 V
+0 -603 V
+126 0 V
+0 -65 V
+127 0 V
+0 110 V
+126 0 V
+0 198 V
+126 0 V
+0 363 V
+127 0 V
+0 31 V
+126 0 V
+0 252 V
+126 0 V
+0 280 V
+127 0 V
+0 321 V
+126 0 V
+0 447 V
+127 0 V
+0 -173 V
+126 0 V
+0 -1024 V
+126 0 V
+0 -1247 V
+127 0 V
+0 -581 V
+126 0 V
+0 -340 V
+126 0 V
+0 -210 V
+127 0 V
+0 -92 V
+126 0 V
+0 -116 V
+126 0 V
+0 -66 V
+127 0 V
+0 -39 V
+126 0 V
+0 -7 V
+126 0 V
+0 -37 V
+127 0 V
+0 -15 V
+126 0 V
+126 0 V
+0 -16 V
+127 0 V
+0 -5 V
+126 0 V
+0 -3 V
+126 0 V
+0 2 V
+127 0 V
+0 -4 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 6 6
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 714 M
+63 0 V
+6254 0 R
+-63 0 V
+546 714 M
+( 0.02) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1148 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.04) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1582 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.06) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2016 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.08) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2450 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2883 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.12) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3317 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.14) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3751 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.16) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4185 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.18) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1683 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2736 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4841 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5894 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/dR_l2l4 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+126 0 V
+127 0 V
+126 0 V
+0 470 V
+126 0 V
+0 344 V
+127 0 V
+0 156 V
+126 0 V
+0 196 V
+126 0 V
+0 158 V
+127 0 V
+0 80 V
+126 0 V
+0 12 V
+126 0 V
+0 127 V
+127 0 V
+0 9 V
+126 0 V
+0 173 V
+126 0 V
+0 314 V
+127 0 V
+0 -124 V
+126 0 V
+0 331 V
+126 0 V
+0 -118 V
+127 0 V
+0 789 V
+126 0 V
+0 -591 V
+126 0 V
+0 94 V
+127 0 V
+0 266 V
+126 0 V
+0 531 V
+126 0 V
+0 -83 V
+127 0 V
+0 200 V
+126 0 V
+0 677 V
+127 0 V
+0 -110 V
+126 0 V
+0 -1046 V
+126 0 V
+0 -1284 V
+127 0 V
+0 -631 V
+126 0 V
+0 -409 V
+126 0 V
+0 -111 V
+127 0 V
+0 -148 V
+126 0 V
+0 -61 V
+126 0 V
+0 -52 V
+127 0 V
+0 -81 V
+126 0 V
+0 -19 V
+126 0 V
+0 1 V
+127 0 V
+0 -28 V
+126 0 V
+0 -5 V
+126 0 V
+0 -22 V
+127 0 V
+0 7 V
+126 0 V
+0 -1 V
+126 0 V
+0 -7 V
+127 0 V
+0 -1 V
+126 0 V
+0 6 V
+126 0 V
+0 -9 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 7 7
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1148 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.05) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2016 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2883 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.15) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3751 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.25) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1683 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2736 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4841 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5894 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/dR_l3l4 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+126 0 V
+127 0 V
+126 0 V
+0 313 V
+126 0 V
+0 516 V
+127 0 V
+0 417 V
+126 0 V
+0 164 V
+126 0 V
+0 64 V
+127 0 V
+0 136 V
+126 0 V
+0 -35 V
+126 0 V
+0 -82 V
+127 0 V
+0 -111 V
+126 0 V
+0 -83 V
+126 0 V
+0 -25 V
+127 0 V
+0 -69 V
+126 0 V
+0 -57 V
+126 0 V
+0 163 V
+127 0 V
+0 -111 V
+126 0 V
+0 149 V
+126 0 V
+0 125 V
+127 0 V
+0 -39 V
+126 0 V
+0 491 V
+126 0 V
+0 1028 V
+127 0 V
+0 -101 V
+126 0 V
+0 333 V
+127 0 V
+0 408 V
+126 0 V
+0 -882 V
+126 0 V
+0 -1191 V
+127 0 V
+0 -621 V
+126 0 V
+0 -253 V
+126 0 V
+0 -186 V
+127 0 V
+0 -160 V
+126 0 V
+0 -46 V
+126 0 V
+0 -103 V
+127 0 V
+0 -90 V
+126 0 V
+0 -11 V
+126 0 V
+0 8 V
+127 0 V
+0 -30 V
+126 0 V
+0 -6 V
+126 0 V
+0 -9 V
+127 0 V
+0 -13 V
+126 0 V
+0 1 V
+126 0 V
+127 0 V
+0 -2 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+126 0 V
+127 0 V
+126 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 8 8
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+63 0 V
+6338 0 R
+-63 0 V
+462 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 714 M
+63 0 V
+6338 0 R
+-63 0 V
+462 714 M
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1148 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.4) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1582 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.6) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2016 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.8) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2450 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2883 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3317 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1.4) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3751 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1.6) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4185 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1.8) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+0 63 V
+0 4276 R
+0 -63 V
+546 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1186 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1826 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2466 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3106 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3747 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4387 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5027 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5667 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6307 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+LTb
+3746 4829 M
+(dS/r1) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+546 280 M
+0 934 V
+320 0 V
+0 -83 V
+320 0 V
+0 84 V
+320 0 V
+0 -72 V
+320 0 V
+0 72 V
+320 0 V
+0 -2 V
+320 0 V
+0 3 V
+320 0 V
+0 -7 V
+320 0 V
+0 -3 V
+320 0 V
+0 12 V
+321 0 V
+0 3301 V
+320 0 V
+0 -4238 V
+320 0 V
+0 -1 V
+320 0 V
+320 0 V
+320 0 V
+320 0 V
+320 0 V
+320 0 V
+320 0 V
+320 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 9 9
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+63 0 V
+6338 0 R
+-63 0 V
+462 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 900 M
+63 0 V
+6338 0 R
+-63 0 V
+462 900 M
+( 0.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1520 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2140 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2759 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3379 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 2.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3999 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 3.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+0 63 V
+0 4276 R
+0 -63 V
+546 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1186 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1826 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2466 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3106 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3747 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4387 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5027 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5667 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6307 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+LTb
+3746 4829 M
+(dS/r2) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+546 280 M
+0 3887 V
+320 0 V
+866 606 L
+320 0 V
+0 -53 V
+320 0 V
+0 -37 V
+320 0 V
+0 -24 V
+320 0 V
+0 2 V
+320 0 V
+0 -15 V
+320 0 V
+0 3 V
+320 0 V
+0 4 V
+320 0 V
+0 29 V
+321 0 V
+0 -23 V
+320 0 V
+0 -23 V
+320 0 V
+320 0 V
+0 -8 V
+320 0 V
+0 6 V
+320 0 V
+0 -6 V
+320 0 V
+0 -18 V
+320 0 V
+0 -6 V
+320 0 V
+0 -38 V
+320 0 V
+0 -19 V
+320 0 V
+0 -100 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 10 10
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+63 0 V
+6338 0 R
+-63 0 V
+462 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 900 M
+63 0 V
+6338 0 R
+-63 0 V
+462 900 M
+( 0.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1520 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2140 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2759 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3379 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 2.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3999 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 3.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+0 63 V
+0 4276 R
+0 -63 V
+546 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1186 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1826 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2466 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3106 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3747 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4387 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5027 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5667 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6307 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+LTb
+3746 4829 M
+(dS/r3) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+546 280 M
+0 3850 V
+320 0 V
+866 626 L
+320 0 V
+0 -70 V
+320 0 V
+0 -40 V
+320 0 V
+0 -4 V
+320 0 V
+0 -9 V
+320 0 V
+0 -22 V
+320 0 V
+0 14 V
+320 0 V
+0 -12 V
+320 0 V
+0 -6 V
+321 0 V
+320 0 V
+0 -11 V
+320 0 V
+0 -2 V
+320 0 V
+320 0 V
+0 3 V
+320 0 V
+0 -3 V
+320 0 V
+0 -16 V
+320 0 V
+0 -1 V
+320 0 V
+0 -30 V
+320 0 V
+0 -41 V
+320 0 V
+0 -96 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 11 11
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+63 0 V
+6338 0 R
+-63 0 V
+462 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 714 M
+63 0 V
+6338 0 R
+-63 0 V
+462 714 M
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1148 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1582 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2016 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.4) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2450 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2883 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.6) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3317 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.7) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3751 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.8) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4185 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.9) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+0 63 V
+0 4276 R
+0 -63 V
+546 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1186 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1826 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2466 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3106 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3747 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4387 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5027 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5667 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6307 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+LTb
+3746 4829 M
+(dS/r4) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+546 280 M
+320 0 V
+320 0 V
+320 0 V
+0 8 V
+320 0 V
+0 113 V
+320 0 V
+0 365 V
+320 0 V
+0 1310 V
+320 0 V
+0 1159 V
+320 0 V
+0 787 V
+320 0 V
+0 588 V
+321 0 V
+0 -116 V
+320 0 V
+0 -370 V
+320 0 V
+0 -899 V
+320 0 V
+0 -1201 V
+320 0 V
+0 -1172 V
+320 0 V
+0 -496 V
+320 0 V
+0 -71 V
+320 0 V
+0 -3 V
+320 0 V
+0 -2 V
+320 0 V
+320 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 12 12
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+63 0 V
+6170 0 R
+-63 0 V
+630 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 714 M
+63 0 V
+6170 0 R
+-63 0 V
+630 714 M
+( 0.001) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1148 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.002) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1582 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.003) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2016 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.004) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2450 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.005) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2883 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.006) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3317 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.007) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3751 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.008) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4185 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.009) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.01) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+0 63 V
+0 4276 R
+0 -63 V
+714 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1337 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 50) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1961 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 100) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2584 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 150) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3207 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 200) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3831 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 250) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4454 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 300) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5077 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 350) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5700 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 400) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6324 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 450) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+LTb
+3830 4829 M
+(dS/dpTl1 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+714 280 M
+125 0 V
+0 4308 V
+124 0 V
+0 -2342 V
+125 0 V
+0 135 V
+125 0 V
+0 -198 V
+124 0 V
+0 -1306 V
+125 0 V
+0 -275 V
+125 0 V
+0 -14 V
+124 0 V
+0 -61 V
+125 0 V
+0 17 V
+125 0 V
+0 -54 V
+124 0 V
+0 -43 V
+125 0 V
+0 -6 V
+125 0 V
+0 -19 V
+124 0 V
+0 -18 V
+125 0 V
+0 -18 V
+125 0 V
+0 -22 V
+124 0 V
+0 -21 V
+125 0 V
+0 6 V
+125 0 V
+0 -26 V
+124 0 V
+0 -1 V
+125 0 V
+0 -3 V
+125 0 V
+0 -14 V
+124 0 V
+0 -3 V
+125 0 V
+0 -6 V
+125 0 V
+0 -5 V
+124 0 V
+0 4 V
+125 0 V
+0 -4 V
+124 0 V
+0 -1 V
+125 0 V
+0 -3 V
+125 0 V
+0 -2 V
+124 0 V
+0 2 V
+125 0 V
+0 -3 V
+125 0 V
+124 0 V
+0 -1 V
+125 0 V
+0 1 V
+125 0 V
+0 -3 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+0 -1 V
+125 0 V
+0 1 V
+124 0 V
+0 -1 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 13 13
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+63 0 V
+6170 0 R
+-63 0 V
+630 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1003 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.002) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1726 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.004) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2450 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.006) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3173 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.008) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3896 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.01) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.012) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+0 63 V
+0 4276 R
+0 -63 V
+714 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1337 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 50) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1961 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 100) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2584 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 150) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3207 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 200) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3831 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 250) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4454 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 300) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5077 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 350) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5700 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 400) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6324 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 450) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+LTb
+3830 4829 M
+(dS/dpTl2 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+714 280 M
+125 0 V
+0 3632 V
+124 0 V
+0 -1975 V
+125 0 V
+0 45 V
+125 0 V
+0 -159 V
+124 0 V
+0 -986 V
+125 0 V
+0 -304 V
+125 0 V
+0 -17 V
+124 0 V
+0 -5 V
+125 0 V
+0 -17 V
+125 0 V
+0 -40 V
+124 0 V
+0 -22 V
+125 0 V
+0 -24 V
+125 0 V
+0 -23 V
+124 0 V
+0 -6 V
+125 0 V
+0 -8 V
+125 0 V
+0 -13 V
+124 0 V
+0 -21 V
+125 0 V
+0 -10 V
+125 0 V
+0 -7 V
+124 0 V
+0 -9 V
+125 0 V
+0 -5 V
+125 0 V
+0 1 V
+124 0 V
+0 -8 V
+125 0 V
+0 -4 V
+125 0 V
+0 -5 V
+124 0 V
+0 -1 V
+125 0 V
+124 0 V
+0 -1 V
+125 0 V
+0 -2 V
+125 0 V
+0 -1 V
+124 0 V
+0 -2 V
+125 0 V
+125 0 V
+0 1 V
+124 0 V
+0 -1 V
+125 0 V
+0 -1 V
+125 0 V
+0 -1 V
+124 0 V
+125 0 V
+125 0 V
+0 -1 V
+124 0 V
+0 1 V
+125 0 V
+0 -1 V
+125 0 V
+124 0 V
+125 0 V
+0 1 V
+125 0 V
+0 -1 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 14 14
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+63 0 V
+6170 0 R
+-63 0 V
+630 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 714 M
+63 0 V
+6170 0 R
+-63 0 V
+630 714 M
+( 0.001) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1148 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.002) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1582 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.003) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2016 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.004) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2450 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.005) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2883 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.006) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3317 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.007) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3751 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.008) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4185 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.009) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.01) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+0 63 V
+0 4276 R
+0 -63 V
+714 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1337 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 50) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1961 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 100) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2584 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 150) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3207 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 200) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3831 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 250) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4454 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 300) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5077 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 350) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5700 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 400) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6324 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 450) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+LTb
+3830 4829 M
+(dS/dpTl3 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+714 280 M
+125 0 V
+0 4101 V
+124 0 V
+0 -2165 V
+125 0 V
+0 325 V
+125 0 V
+0 -269 V
+124 0 V
+0 -1362 V
+125 0 V
+0 -323 V
+125 0 V
+0 -19 V
+124 0 V
+0 -1 V
+125 0 V
+0 -67 V
+125 0 V
+0 -6 V
+124 0 V
+0 -38 V
+125 0 V
+0 -8 V
+125 0 V
+0 -34 V
+124 0 V
+0 -15 V
+125 0 V
+0 -23 V
+125 0 V
+0 -12 V
+124 0 V
+0 -20 V
+125 0 V
+0 -11 V
+125 0 V
+124 0 V
+0 -4 V
+125 0 V
+0 -20 V
+125 0 V
+0 -5 V
+124 0 V
+0 -7 V
+125 0 V
+0 11 V
+125 0 V
+0 -11 V
+124 0 V
+0 -5 V
+125 0 V
+0 -2 V
+124 0 V
+0 -3 V
+125 0 V
+0 -1 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+0 -2 V
+124 0 V
+0 -1 V
+125 0 V
+0 1 V
+125 0 V
+0 -3 V
+124 0 V
+125 0 V
+125 0 V
+0 -1 V
+124 0 V
+0 1 V
+125 0 V
+0 -1 V
+125 0 V
+124 0 V
+125 0 V
+0 2 V
+125 0 V
+0 -2 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 15 15
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+63 0 V
+6170 0 R
+-63 0 V
+630 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 714 M
+63 0 V
+6170 0 R
+-63 0 V
+630 714 M
+( 0.001) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1148 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.002) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1582 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.003) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2016 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.004) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2450 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.005) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2883 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.006) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3317 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.007) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3751 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.008) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4185 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.009) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.01) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+0 63 V
+0 4276 R
+0 -63 V
+714 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1337 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 50) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1961 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 100) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2584 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 150) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3207 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 200) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3831 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 250) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4454 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 300) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5077 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 350) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5700 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 400) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6324 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 450) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+LTb
+3830 4829 M
+(dS/dpTl4 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+714 280 M
+125 0 V
+0 4053 V
+124 0 V
+0 -2039 V
+125 0 V
+0 95 V
+125 0 V
+0 -193 V
+124 0 V
+0 -1149 V
+125 0 V
+0 -453 V
+125 0 V
+0 -13 V
+124 0 V
+0 -21 V
+125 0 V
+0 -50 V
+125 0 V
+0 -20 V
+124 0 V
+0 -27 V
+125 0 V
+0 -19 V
+125 0 V
+0 -9 V
+124 0 V
+0 -37 V
+125 0 V
+0 -3 V
+125 0 V
+0 -32 V
+124 0 V
+0 -9 V
+125 0 V
+0 -12 V
+125 0 V
+0 -16 V
+124 0 V
+0 -2 V
+125 0 V
+0 -12 V
+125 0 V
+0 -7 V
+124 0 V
+0 -3 V
+125 0 V
+0 -6 V
+125 0 V
+0 -1 V
+124 0 V
+0 -4 V
+125 0 V
+124 0 V
+0 -2 V
+125 0 V
+0 -4 V
+125 0 V
+0 3 V
+124 0 V
+0 -3 V
+125 0 V
+125 0 V
+0 -2 V
+124 0 V
+125 0 V
+125 0 V
+0 -1 V
+124 0 V
+0 1 V
+125 0 V
+0 -2 V
+125 0 V
+124 0 V
+125 0 V
+0 -1 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 16 16
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 762 M
+63 0 V
+6254 0 R
+-63 0 V
+546 762 M
+( 0.15) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1244 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1726 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.25) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2208 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2691 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.35) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3173 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.4) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3655 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.45) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4137 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.55) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1262 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1893 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2525 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3157 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4420 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5052 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5684 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6315 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/costh1 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+0 3955 V
+632 0 V
+0 -562 V
+631 0 V
+0 -112 V
+632 0 V
+0 -694 V
+632 0 V
+0 -286 V
+632 0 V
+0 -493 V
+631 0 V
+0 -449 V
+632 0 V
+0 -463 V
+632 0 V
+0 -412 V
+631 0 V
+0 -368 V
+632 0 V
+0 -116 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 17 17
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0.1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 822 M
+63 0 V
+6254 0 R
+-63 0 V
+546 822 M
+( 0.15) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1365 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1907 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.25) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2450 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2992 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.35) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3534 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.4) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4077 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.45) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1262 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1893 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2525 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3157 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4420 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5052 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5684 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6315 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/costh2 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+0 3921 V
+632 0 V
+0 -95 V
+631 0 V
+0 -378 V
+632 0 V
+0 -318 V
+632 0 V
+0 -373 V
+632 0 V
+0 -368 V
+631 0 V
+0 -806 V
+632 0 V
+0 -536 V
+632 0 V
+0 -510 V
+631 0 V
+0 -474 V
+632 0 V
+0 -63 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 18 18
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0.24) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 900 M
+63 0 V
+6254 0 R
+-63 0 V
+546 900 M
+( 0.26) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1520 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.28) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2140 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2759 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.32) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3379 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.34) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3999 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.36) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.38) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1262 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1893 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2525 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3157 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4420 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5052 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5684 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6315 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/costhstar \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+0 3301 V
+632 0 V
+0 -88 V
+631 0 V
+0 787 V
+632 0 V
+0 -1112 V
+632 0 V
+0 868 V
+632 0 V
+0 -1810 V
+631 0 V
+0 -301 V
+632 0 V
+0 -1068 V
+632 0 V
+0 -571 V
+631 0 V
+0 136 V
+632 0 V
+0 -142 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 19 19
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0.25) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 900 M
+63 0 V
+6254 0 R
+-63 0 V
+546 900 M
+( 0.3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1520 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.35) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2140 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.4) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2759 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.45) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3379 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3999 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.55) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.6) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1262 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1893 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2525 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3157 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4420 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5052 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5684 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6315 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/cosphitilde \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+0 892 V
+632 0 V
+0 -544 V
+631 0 V
+0 -190 V
+632 0 V
+0 309 V
+632 0 V
+0 -339 V
+632 0 V
+0 143 V
+631 0 V
+0 -29 V
+632 0 V
+0 -24 V
+632 0 V
+0 304 V
+631 0 V
+0 3581 V
+632 0 V
+0 -4103 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 20 20
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+63 0 V
+6254 0 R
+-63 0 V
+546 280 M
+( 0.22) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 822 M
+63 0 V
+6254 0 R
+-63 0 V
+546 822 M
+( 0.24) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1365 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.26) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 1907 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.28) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2450 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 2992 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.32) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 3534 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.34) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4077 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.36) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 M
+63 0 V
+6254 0 R
+-63 0 V
+-6338 0 R
+( 0.38) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+630 280 M
+0 63 V
+0 4276 R
+0 -63 V
+630 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1262 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1893 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2525 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3157 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3789 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4420 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5052 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5684 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6315 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+LTb
+3788 4829 M
+(dS/cosphi \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+630 280 M
+0 4005 V
+632 0 V
+0 -939 V
+631 0 V
+0 619 V
+632 0 V
+0 -767 V
+632 0 V
+0 -17 V
+632 0 V
+0 -247 V
+631 0 V
+0 -244 V
+632 0 V
+0 -839 V
+632 0 V
+0 -583 V
+631 0 V
+0 -974 V
+632 0 V
+0 -14 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+630 4619 N
+630 280 L
+6317 0 V
+0 4339 V
+-6317 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 21 21
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+63 0 V
+6338 0 R
+-63 0 V
+462 280 M
+( 0.2) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 822 M
+63 0 V
+6338 0 R
+-63 0 V
+462 822 M
+( 0.3) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1365 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.4) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 1907 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.5) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2450 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.6) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 2992 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.7) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 3534 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.8) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4077 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 0.9) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 M
+63 0 V
+6338 0 R
+-63 0 V
+-6422 0 R
+( 1) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+546 280 M
+0 63 V
+0 4276 R
+0 -63 V
+546 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1186 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1826 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2466 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3106 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3747 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4387 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5027 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5667 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6307 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+LTb
+3746 4829 M
+(dS/costhstar2 \(fb\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+546 280 M
+0 508 V
+640 0 V
+0 68 V
+640 0 V
+0 -81 V
+640 0 V
+0 9 V
+640 0 V
+0 29 V
+641 0 V
+0 152 V
+640 0 V
+0 71 V
+640 0 V
+0 340 V
+640 0 V
+0 315 V
+640 0 V
+0 2631 V
+640 0 V
+0 -4042 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+546 4619 N
+546 280 L
+6401 0 V
+0 4339 V
+-6401 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 22 22
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+63 0 V
+6170 0 R
+-63 0 V
+630 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1003 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.002) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1726 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.004) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2450 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.006) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3173 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.008) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3896 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.01) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.012) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+0 63 V
+0 4276 R
+0 -63 V
+714 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1337 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 100) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1961 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 200) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2584 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 300) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3207 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 400) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3831 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4454 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 600) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5077 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 700) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5700 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 800) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6324 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 900) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1000) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+LTb
+3830 4829 M
+(dS/dmZZ \(fb/GeV\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+714 280 M
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+0 3944 V
+125 0 V
+0 -3942 V
+124 0 V
+0 3 V
+125 0 V
+0 38 V
+125 0 V
+0 13 V
+124 0 V
+0 3 V
+125 0 V
+125 0 V
+0 3 V
+124 0 V
+125 0 V
+0 2 V
+125 0 V
+0 9 V
+124 0 V
+0 10 V
+125 0 V
+0 13 V
+125 0 V
+0 -5 V
+124 0 V
+0 2 V
+125 0 V
+0 -8 V
+125 0 V
+0 -12 V
+124 0 V
+0 -9 V
+125 0 V
+0 -4 V
+125 0 V
+0 2 V
+124 0 V
+0 -15 V
+125 0 V
+0 -4 V
+124 0 V
+125 0 V
+0 -5 V
+125 0 V
+0 -3 V
+124 0 V
+0 -6 V
+125 0 V
+0 -2 V
+125 0 V
+0 -6 V
+124 0 V
+0 -3 V
+125 0 V
+0 6 V
+125 0 V
+0 -10 V
+124 0 V
+125 0 V
+0 -4 V
+125 0 V
+0 1 V
+124 0 V
+0 -3 V
+125 0 V
+0 2 V
+125 0 V
+124 0 V
+0 -3 V
+125 0 V
+125 0 V
+0 -2 V
+124 0 V
+0 -1 V
+125 0 V
+0 1 V
+125 0 V
+0 -1 V
+124 0 V
+0 -2 V
+125 0 V
+0 -2 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 23 23
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+63 0 V
+6170 0 R
+-63 0 V
+630 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 822 M
+63 0 V
+6170 0 R
+-63 0 V
+630 822 M
+( 0.001) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1365 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.002) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1907 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.003) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2450 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.004) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2992 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.005) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3534 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.006) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4077 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.007) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.008) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+0 63 V
+0 4276 R
+0 -63 V
+714 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1337 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 100) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1961 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 200) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2584 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 300) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3207 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 400) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3831 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4454 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 600) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5077 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 700) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5700 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 800) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6324 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 900) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1000) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+LTb
+3830 4829 M
+(dS/dmTZLm \(fb/GeV\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+714 280 M
+0 650 V
+125 0 V
+0 1334 V
+124 0 V
+0 -1252 V
+125 0 V
+0 -60 V
+125 0 V
+0 3588 V
+124 0 V
+0 -4188 V
+125 0 V
+0 -62 V
+125 0 V
+0 -6 V
+124 0 V
+0 -3 V
+125 0 V
+125 0 V
+0 -1 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 24 24
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+63 0 V
+6170 0 R
+-63 0 V
+630 280 M
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 762 M
+63 0 V
+6170 0 R
+-63 0 V
+630 762 M
+( 0.001) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1244 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.002) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1726 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.003) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2208 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.004) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2691 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.005) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3173 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.006) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3655 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.007) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4137 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.008) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 M
+63 0 V
+6170 0 R
+-63 0 V
+-6254 0 R
+( 0.009) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+0 63 V
+0 4276 R
+0 -63 V
+714 140 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1337 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 100) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1961 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 200) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+2584 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 300) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3207 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 400) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+3831 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 500) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4454 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 600) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5077 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 700) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+5700 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 800) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6324 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 900) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+0 -4416 R
+( 1000) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+LTb
+3830 4829 M
+(dS/dmlll \(fb/GeV\)) Cshow
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+% Begin plot #1
+1.000 UL
+LT0
+LC0 setrgbcolor
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+714 280 M
+0 466 V
+125 0 V
+0 1246 V
+124 0 V
+963 955 L
+125 0 V
+0 -84 V
+125 0 V
+0 3340 V
+124 0 V
+0 -3868 V
+125 0 V
+0 -52 V
+125 0 V
+0 -8 V
+124 0 V
+0 -1 V
+125 0 V
+0 -1 V
+125 0 V
+0 -1 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+125 0 V
+124 0 V
+125 0 V
+% End plot #1
+stroke
+LTb
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+stroke
+grestore
+end
+showpage
+%%Page: 25 25
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.100 0.100 scale
+90 rotate
+0 -5040 translate
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {gsave BackgroundColor C clippath fill grestore} if
+gsave % colour palette begin
+/maxcolors 0 def
+/HSV2RGB {  exch dup 0.0 eq {pop exch pop dup dup} % achromatic gray
+  { /HSVs exch def /HSVv exch def 6.0 mul dup floor dup 3 1 roll sub
+     /HSVf exch def /HSVi exch cvi def /HSVp HSVv 1.0 HSVs sub mul def
+	 /HSVq HSVv 1.0 HSVs HSVf mul sub mul def 
+	 /HSVt HSVv 1.0 HSVs 1.0 HSVf sub mul sub mul def
+	 /HSVi HSVi 6 mod def 0 HSVi eq {HSVv HSVt HSVp}
+	 {1 HSVi eq {HSVq HSVv HSVp}{2 HSVi eq {HSVp HSVv HSVt}
+	 {3 HSVi eq {HSVp HSVq HSVv}{4 HSVi eq {HSVt HSVp HSVv}
+	 {HSVv HSVp HSVq} ifelse} ifelse} ifelse} ifelse} ifelse
+  } ifelse} def
+/Constrain {
+  dup 0 lt {0 exch pop}{dup 1 gt {1 exch pop} if} ifelse} def
+/YIQ2RGB {
+  3 copy -1.702 mul exch -1.105 mul add add Constrain 4 1 roll
+  3 copy -0.647 mul exch -0.272 mul add add Constrain 5 1 roll
+  0.621 mul exch -0.956 mul add add Constrain 3 1 roll } def
+/CMY2RGB {  1 exch sub exch 1 exch sub 3 2 roll 1 exch sub 3 1 roll exch } def
+/XYZ2RGB {  3 copy -0.9017 mul exch -0.1187 mul add exch 0.0585 mul exch add
+  Constrain 4 1 roll 3 copy -0.0279 mul exch 1.999 mul add exch
+  -0.9844 mul add Constrain 5 1 roll -0.2891 mul exch -0.5338 mul add
+  exch 1.91 mul exch add Constrain 3 1 roll} def
+/SelectSpace {ColorSpace (HSV) eq {HSV2RGB}{ColorSpace (XYZ) eq {
+  XYZ2RGB}{ColorSpace (CMY) eq {CMY2RGB}{ColorSpace (YIQ) eq {YIQ2RGB}
+  if} ifelse} ifelse} ifelse} def
+/InterpolatedColor false def
+/cF30 {0.32 div 0.78125 sub} bind def	% x/0.32-0.78125
+/cF31 {2 mul 0.84 sub} bind def	% 2*x-0.84
+/cF32 {dup 0.42 le {4 mul} {dup 0.92 le {-2 mul 1.84 add} {0.08 div 11.5 sub} ifelse} ifelse} bind def	% 4x;1;-2x+1.84;x/0.08-11.5
+/pm3dround {maxcolors 0 gt {dup 1 ge
+	{pop 1} {maxcolors mul floor maxcolors 1 sub div} ifelse} if} def
+/pm3dGamma 1.0 1.5 Gamma mul div def
+/ColorSpace (RGB) def
+Color InterpolatedColor or { % COLOUR vs. GRAY map
+  InterpolatedColor { %% Interpolation vs. RGB-Formula
+    /g {stroke pm3dround /grayv exch def interpolate
+        SelectSpace setrgbcolor} bind def
+  }{
+  /g {stroke pm3dround dup cF30 Constrain exch dup cF31 Constrain exch cF32 Constrain 
+       SelectSpace setrgbcolor} bind def
+  } ifelse
+}{
+  /g {stroke pm3dround pm3dGamma exp setgray} bind def
+} ifelse
+1.000 UL
+LTb
+LCb setrgbcolor
+LTb
+2808 4926 M
+(d2S/dcthetastar mzz) Cshow
+1.000 UP
+% Begin plot #1
+%pm3d_map_begin
+1.000 UL
+LT0
+LC0 setrgbcolor
+1 g 1086 1089 N -383 0 0 186 383 0 h
+1 g 1086 1275 N -383 0 0 186 383 0 h
+.8014 g 1086 1461 N -383 0 0 186 383 0 h
+.7991 g 1086 1647 N -383 0 0 186 383 0 h
+.9903 g 1086 1833 N -383 0 0 186 383 0 h
+.984 g 1086 2019 N -383 0 0 186 383 0 h
+.9813 g 1086 2205 N -383 0 0 186 383 0 h
+.9766 g 1086 2391 N -383 0 0 186 383 0 h
+.9756 g 1086 2577 N -383 0 0 186 383 0 h
+.9795 g 1086 2763 N -383 0 0 186 383 0 h
+.9834 g 1086 2949 N -383 0 0 186 383 0 h
+.9867 g 1086 3135 N -383 0 0 186 383 0 h
+.9897 g 1086 3321 N -383 0 0 186 383 0 h
+.9932 g 1086 3507 N -383 0 0 186 383 0 h
+.9948 g 1086 3693 N -383 0 0 186 383 0 h
+.996 g 1086 3879 N -383 0 0 186 383 0 h
+.9972 g 1086 4065 N -383 0 0 186 383 0 h
+.998 g 1086 4251 N -383 0 0 186 383 0 h
+.9989 g 1086 4437 N -383 0 0 186 383 0 h
+1 g 1469 1089 N -382 0 0 186 382 0 h
+1 g 1469 1275 N -382 0 0 186 382 0 h
+.6247 g 1469 1461 N -382 0 0 186 382 0 h
+.6202 g 1469 1647 N -382 0 0 186 382 0 h
+.9814 g 1469 1833 N -382 0 0 186 382 0 h
+.9693 g 1469 2019 N -382 0 0 186 382 0 h
+.9643 g 1469 2205 N -382 0 0 186 382 0 h
+.9567 g 1469 2391 N -382 0 0 186 382 0 h
+.9548 g 1469 2577 N -382 0 0 186 382 0 h
+.9631 g 1469 2763 N -382 0 0 186 382 0 h
+.9712 g 1469 2949 N -382 0 0 186 382 0 h
+.9759 g 1469 3135 N -382 0 0 186 382 0 h
+.9811 g 1469 3321 N -382 0 0 186 382 0 h
+.9868 g 1469 3507 N -382 0 0 186 382 0 h
+.989 g 1469 3693 N -382 0 0 186 382 0 h
+.9919 g 1469 3879 N -382 0 0 186 382 0 h
+.9951 g 1469 4065 N -382 0 0 186 382 0 h
+.9964 g 1469 4251 N -382 0 0 186 382 0 h
+.9978 g 1469 4437 N -382 0 0 186 382 0 h
+1 g 1851 1089 N -383 0 0 186 383 0 h
+1 g 1851 1275 N -383 0 0 186 383 0 h
+.5872 g 1851 1461 N -383 0 0 186 383 0 h
+.5822 g 1851 1647 N -383 0 0 186 383 0 h
+.9809 g 1851 1833 N -383 0 0 186 383 0 h
+.969 g 1851 2019 N -383 0 0 186 383 0 h
+.9624 g 1851 2205 N -383 0 0 186 383 0 h
+.9546 g 1851 2391 N -383 0 0 186 383 0 h
+.9521 g 1851 2577 N -383 0 0 186 383 0 h
+.9601 g 1851 2763 N -383 0 0 186 383 0 h
+.9693 g 1851 2949 N -383 0 0 186 383 0 h
+.9752 g 1851 3135 N -383 0 0 186 383 0 h
+.9807 g 1851 3321 N -383 0 0 186 383 0 h
+.9859 g 1851 3507 N -383 0 0 186 383 0 h
+.9886 g 1851 3693 N -383 0 0 186 383 0 h
+.9913 g 1851 3879 N -383 0 0 186 383 0 h
+.9945 g 1851 4065 N -383 0 0 186 383 0 h
+.996 g 1851 4251 N -383 0 0 186 383 0 h
+.9974 g 1851 4437 N -383 0 0 186 383 0 h
+1 g 2234 1089 N -383 0 0 186 383 0 h
+1 g 2234 1275 N -383 0 0 186 383 0 h
+.5755 g 2234 1461 N -383 0 0 186 383 0 h
+.5706 g 2234 1647 N -383 0 0 186 383 0 h
+.9817 g 2234 1833 N -383 0 0 186 383 0 h
+.9705 g 2234 2019 N -383 0 0 186 383 0 h
+.9639 g 2234 2205 N -383 0 0 186 383 0 h
+.9557 g 2234 2391 N -383 0 0 186 383 0 h
+.9537 g 2234 2577 N -383 0 0 186 383 0 h
+.9605 g 2234 2763 N -383 0 0 186 383 0 h
+.9683 g 2234 2949 N -383 0 0 186 383 0 h
+.9752 g 2234 3135 N -383 0 0 186 383 0 h
+.9807 g 2234 3321 N -383 0 0 186 383 0 h
+.9855 g 2234 3507 N -383 0 0 186 383 0 h
+.9897 g 2234 3693 N -383 0 0 186 383 0 h
+.9923 g 2234 3879 N -383 0 0 186 383 0 h
+.9944 g 2234 4065 N -383 0 0 186 383 0 h
+.9959 g 2234 4251 N -383 0 0 186 383 0 h
+.9972 g 2234 4437 N -383 0 0 186 383 0 h
+1 g 2617 1089 N -382 0 0 186 382 0 h
+1 g 2617 1275 N -382 0 0 186 382 0 h
+.5837 g 2617 1461 N -382 0 0 186 382 0 h
+.5788 g 2617 1647 N -382 0 0 186 382 0 h
+.9808 g 2617 1833 N -382 0 0 186 382 0 h
+.9706 g 2617 2019 N -382 0 0 186 382 0 h
+.9672 g 2617 2205 N -382 0 0 186 382 0 h
+.9592 g 2617 2391 N -382 0 0 186 382 0 h
+.9545 g 2617 2577 N -382 0 0 186 382 0 h
+.9602 g 2617 2763 N -382 0 0 186 382 0 h
+.9684 g 2617 2949 N -382 0 0 186 382 0 h
+.9754 g 2617 3135 N -382 0 0 186 382 0 h
+.9808 g 2617 3321 N -382 0 0 186 382 0 h
+.9847 g 2617 3507 N -382 0 0 186 382 0 h
+.9895 g 2617 3693 N -382 0 0 186 382 0 h
+.9933 g 2617 3879 N -382 0 0 186 382 0 h
+.9952 g 2617 4065 N -382 0 0 186 382 0 h
+.9957 g 2617 4251 N -382 0 0 186 382 0 h
+.9966 g 2617 4437 N -382 0 0 186 382 0 h
+1 g 2999 1089 N -383 0 0 186 383 0 h
+1 g 2999 1275 N -383 0 0 186 383 0 h
+.6233 g 2999 1461 N -383 0 0 186 383 0 h
+.6187 g 2999 1647 N -383 0 0 186 383 0 h
+.9812 g 2999 1833 N -383 0 0 186 383 0 h
+.972 g 2999 2019 N -383 0 0 186 383 0 h
+.9696 g 2999 2205 N -383 0 0 186 383 0 h
+.9616 g 2999 2391 N -383 0 0 186 383 0 h
+.9555 g 2999 2577 N -383 0 0 186 383 0 h
+.9602 g 2999 2763 N -383 0 0 186 383 0 h
+.9691 g 2999 2949 N -383 0 0 186 383 0 h
+.9759 g 2999 3135 N -383 0 0 186 383 0 h
+.9811 g 2999 3321 N -383 0 0 186 383 0 h
+.9855 g 2999 3507 N -383 0 0 186 383 0 h
+.9906 g 2999 3693 N -383 0 0 186 383 0 h
+.994 g 2999 3879 N -383 0 0 186 383 0 h
+.9953 g 2999 4065 N -383 0 0 186 383 0 h
+.9954 g 2999 4251 N -383 0 0 186 383 0 h
+.9962 g 2999 4437 N -383 0 0 186 383 0 h
+1 g 3382 1089 N -383 0 0 186 383 0 h
+1 g 3382 1275 N -383 0 0 186 383 0 h
+.6613 g 3382 1461 N -383 0 0 186 383 0 h
+.6571 g 3382 1647 N -383 0 0 186 383 0 h
+.9828 g 3382 1833 N -383 0 0 186 383 0 h
+.9742 g 3382 2019 N -383 0 0 186 383 0 h
+.9715 g 3382 2205 N -383 0 0 186 383 0 h
+.964 g 3382 2391 N -383 0 0 186 383 0 h
+.9589 g 3382 2577 N -383 0 0 186 383 0 h
+.963 g 3382 2763 N -383 0 0 186 383 0 h
+.9717 g 3382 2949 N -383 0 0 186 383 0 h
+.9779 g 3382 3135 N -383 0 0 186 383 0 h
+.9825 g 3382 3321 N -383 0 0 186 383 0 h
+.9871 g 3382 3507 N -383 0 0 186 383 0 h
+.9911 g 3382 3693 N -383 0 0 186 383 0 h
+.9939 g 3382 3879 N -383 0 0 186 383 0 h
+.9949 g 3382 4065 N -383 0 0 186 383 0 h
+.9953 g 3382 4251 N -383 0 0 186 383 0 h
+.9965 g 3382 4437 N -383 0 0 186 383 0 h
+1 g 3765 1089 N -382 0 0 186 382 0 h
+1 g 3765 1275 N -382 0 0 186 382 0 h
+.6836 g 3765 1461 N -382 0 0 186 382 0 h
+.6791 g 3765 1647 N -382 0 0 186 382 0 h
+.9823 g 3765 1833 N -382 0 0 186 382 0 h
+.9746 g 3765 2019 N -382 0 0 186 382 0 h
+.974 g 3765 2205 N -382 0 0 186 382 0 h
+.9685 g 3765 2391 N -382 0 0 186 382 0 h
+.964 g 3765 2577 N -382 0 0 186 382 0 h
+.9677 g 3765 2763 N -382 0 0 186 382 0 h
+.9755 g 3765 2949 N -382 0 0 186 382 0 h
+.9801 g 3765 3135 N -382 0 0 186 382 0 h
+.9843 g 3765 3321 N -382 0 0 186 382 0 h
+.9883 g 3765 3507 N -382 0 0 186 382 0 h
+.9912 g 3765 3693 N -382 0 0 186 382 0 h
+.9941 g 3765 3879 N -382 0 0 186 382 0 h
+.9951 g 3765 4065 N -382 0 0 186 382 0 h
+.9957 g 3765 4251 N -382 0 0 186 382 0 h
+.9967 g 3765 4437 N -382 0 0 186 382 0 h
+1 g 4147 1089 N -383 0 0 186 383 0 h
+1 g 4147 1275 N -383 0 0 186 383 0 h
+.7061 g 4147 1461 N -383 0 0 186 383 0 h
+.7012 g 4147 1647 N -383 0 0 186 383 0 h
+.9831 g 4147 1833 N -383 0 0 186 383 0 h
+.9762 g 4147 2019 N -383 0 0 186 383 0 h
+.9755 g 4147 2205 N -383 0 0 186 383 0 h
+.9705 g 4147 2391 N -383 0 0 186 383 0 h
+.9677 g 4147 2577 N -383 0 0 186 383 0 h
+.9731 g 4147 2763 N -383 0 0 186 383 0 h
+.9791 g 4147 2949 N -383 0 0 186 383 0 h
+.9827 g 4147 3135 N -383 0 0 186 383 0 h
+.9869 g 4147 3321 N -383 0 0 186 383 0 h
+.9903 g 4147 3507 N -383 0 0 186 383 0 h
+.9925 g 4147 3693 N -383 0 0 186 383 0 h
+.9945 g 4147 3879 N -383 0 0 186 383 0 h
+.9957 g 4147 4065 N -383 0 0 186 383 0 h
+.9965 g 4147 4251 N -383 0 0 186 383 0 h
+.9971 g 4147 4437 N -383 0 0 186 383 0 h
+%pm3d_map_end
+1.000 UL
+LT0
+LC0 setrgbcolor
+% End plot #1
+1.000 UL
+LTb
+LCb setrgbcolor
+894 4716 N
+894 996 L
+3828 0 V
+0 3720 V
+-3828 0 V
+Z stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+894 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+894 814 M
+( 0) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+894 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+1277 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+1277 814 M
+( 0.1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+1277 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+1660 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+1660 814 M
+( 0.2) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+1660 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+2043 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+2043 814 M
+( 0.3) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+2043 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+2426 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+2426 814 M
+( 0.4) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+2426 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+2808 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+2808 814 M
+( 0.5) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+2808 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+3190 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+3190 814 M
+( 0.6) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+3190 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+3573 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+3573 814 M
+( 0.7) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+3573 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+3956 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+3956 814 M
+( 0.8) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+3956 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+4339 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+4339 814 M
+( 0.9) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4339 4716 M
+0 -82 V
+stroke
+LTb
+LCb setrgbcolor
+4722 996 M
+0 82 V
+stroke
+LTb
+LCb setrgbcolor
+4722 814 M
+( 1) Cshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 4716 M
+0 -82 V
+stroke
+LCb setrgbcolor
+2808 604 M
+(cthetas) Cshow
+LTb
+1.000 UL
+LTb
+LCb setrgbcolor
+894 996 M
+82 0 V
+-191 0 R
+( 0) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 996 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 1368 M
+82 0 V
+-191 0 R
+( 100) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 1368 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 1740 M
+82 0 V
+-191 0 R
+( 200) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 1740 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 2112 M
+82 0 V
+-191 0 R
+( 300) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 2112 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 2484 M
+82 0 V
+-191 0 R
+( 400) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 2484 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 2856 M
+82 0 V
+-191 0 R
+( 500) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 2856 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 3228 M
+82 0 V
+-191 0 R
+( 600) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 3228 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 3600 M
+82 0 V
+-191 0 R
+( 700) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 3600 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 3972 M
+82 0 V
+-191 0 R
+( 800) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 3972 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 4344 M
+82 0 V
+-191 0 R
+( 900) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 4344 M
+-82 0 V
+stroke
+LTb
+LCb setrgbcolor
+894 4716 M
+82 0 V
+-191 0 R
+( 1000) Rshow
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4722 4716 M
+-82 0 V
+stroke
+LCb setrgbcolor
+323 2856 M
+currentpoint gsave translate -270 rotate 0 0 M
+(mzz) Cshow
+grestore
+LTb
+1.000 UL
+LTb
+LCb setrgbcolor
+894 4716 N
+894 996 L
+3828 0 V
+0 3720 V
+-3828 0 V
+Z stroke
+stroke gsave	%% draw gray scale smooth box
+maxcolors 0 gt {/imax maxcolors def} {/imax 1024 def} ifelse
+4817 996 translate 192 3720 scale 0 setlinewidth
+/ystep 1 imax div def /y0 0 def /ii 0 def
+{ 0.99999 y0 sub g 0 y0 N 1 0 V 0 ystep V -1 0 f
+/y0 y0 ystep add def /ii ii 1 add def
+ii imax ge {exit} if } loop
+grestore 0 setgray
+1.000 UL
+LTb
+LCb setrgbcolor
+4817 996 N
+192 0 V
+0 3720 V
+-192 0 V
+0 -3720 V
+Z stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+5009 996 M
+-63 0 V
+147 0 R
+( 0) Lshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4817 996 M
+63 0 V
+129 620 R
+-63 0 V
+147 0 R
+( 0.001) Lshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4817 1616 M
+63 0 V
+129 620 R
+-63 0 V
+147 0 R
+( 0.002) Lshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4817 2236 M
+63 0 V
+129 620 R
+-63 0 V
+147 0 R
+( 0.003) Lshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4817 2856 M
+63 0 V
+129 620 R
+-63 0 V
+147 0 R
+( 0.004) Lshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4817 3476 M
+63 0 V
+129 620 R
+-63 0 V
+147 0 R
+( 0.005) Lshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4817 4096 M
+63 0 V
+129 620 R
+-63 0 V
+147 0 R
+( 0.006) Lshow
+1.000 UL
+LTb
+LCb setrgbcolor
+4817 4716 M
+63 0 V
+1.000 UP
+stroke
+grestore % colour palette end
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica
+%%Pages: 25
