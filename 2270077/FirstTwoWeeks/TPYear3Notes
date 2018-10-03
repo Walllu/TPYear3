@@ -140,6 +140,65 @@ TASK follow a tutorial to LaTeX.
 Alright, I'll leave that off for today. I'll continue reading at home.
 
 
+Tuesday 2.10.2018 --
+I've been reading about C++ and LaTeX over the weekend, and now I'll go through the C++ portion of the lab.
+My program is behaving somewhat strangely. When representing the change as a float or a double, in some cases subtracting 0.1 from 0.1 (as an example) seems to create a slightly negative number! My program is to find the least amount of notes needed to give a customer as change, and this seems from the outset, a very simple problem to write a program for. So I thought to subtract a note, test if it's positive or negative, and act accordingly, passing it down to the point where we're giving pennies. But this strange thing has even the demonstrator confounded. My solution to this is to multiply the user's input (not testing, or cleaning, the data very much) by a factor of 100, and treating the amount as an integer. By rights, 0.1 - 0.1 = 0.0, but we're seeing 0.1 - 0.1 = 1.56299e-15 !!!
+The program is working now, with the integer conversion. I still want an explanation for this strange behavior from before. It must have something to do with rounding errors, as the double representation saw a much smaller error than the float representation, as one would expect.
+
+Task: Write a C++ program to convert a temperature in Fahrenheit to Celsius and
+Kelvin. The program should ask for the temperature in Fahrenheit from the user and
+return the Celsius and Kelvin values.
+
+This went off without much of a hitch. I learned that (5/9) returns the nearest floored integer, which, in this case, was 0. That's not very helpful when converting F to C/K, so I had to represent this fraction as (5.0/9.0)...
+
+
+Task: The Fibonacci sequence {a n } is defined by ...
+Write a C++ program which takes an integer as input from the user and returns a_n.
+
+I could interpret this as meaning "Accept integer input, and return that index of the Fibonacci sequence.
+This is a famous (well, I say famous...) example of a programming problem where recursion is useful. I'll write a fibonacci function and give it a go...
+It works well, up to the 47th index, after this the integer gets overflowed, for example the 47th index returned gives..
+	Type in the index of the Fibonacci you would like to see.
+	47
+	-1323752223
+And after this, the program fails to produce any numbers at all, as it then subtracts the overflow from the 46th index (+) + (-) = (+) until it overflows again.
+I first considered reimplementing this with "long int"s, but then just decided to add a check to see if it overflowed, and then print "overflow error" once it happens.
+
+
+Task: Write a program that prompts the user to enter an integer between 1 and
+1000 and tells them whether or not it is a prime number.
+
+What's the best way to test primality? I've checked for input==2, and input%2==0, the simple cases. But, considering the limited range of numbers we're considering, perhaps I could slap together kinda simplistic.
+Alright, my program appears to work. First I check for the starting prime numbers, and whether or not the number is even. Then I successively divide the number by all the odd numbers less than it, until either we find a counter example, or we end at the top of the list, at which time we figure out that the number is prime! This method theoretically works for all numbers (not just those between 1 and 1000) but it would take a long time, and perhaps the number cannot be represented in the computer as before, so it has it's limitations.
+
+
+TASK Write a program that allows the user to enter an arbitrary (i.e. user defined) number of real numbers, and returns their mean and standard deviation.
+I implemented this by first asking the user the number of data points they would like to input, then the user input the numbers one at a time. The program stores these in an array of size "size" determined by how many data points they wanted to input. Then, it's a simple calculation of the mean, then the standard deviation (I calculated the sample standard deviation in my program).
+
+Task: Write a program which counts (and returns) the number of characters in its
+own source code file, excluding blanks.
+
+I had to do some Googling, and found some code that uses streams and strings to read in a files, and go through the text line by line. I then found how to read in the line as a string, and furthermore found out how to count the number of characters in that string. I just needed to remove all the blank characters (whitespaces, tabs) and count what is left, and add that to a running total, to get the final answer.
+
+
+Task: Repeat the earlier task where you returned the nth term of the Fibonacci
+sequence, but this time, implement it in a function (i.e. fib(n) returns the integer a n ).
+Don’t use any loops - do it entirely with a (single) function. -----------------------------------------> I just read this, and I realize that this is how I originally implemented it. Do I need to make it again?
+
+Task: Write a program that uses 2-dimensional arrays to multiply together two user
+defined matrices.
+
+I'm thinking now about how we should accept input from the user. How can the user input the numbers? CSV format from the CLI? I still don't know how to split a string by commas, but I guess this is a good opportunity to do so... Ok, I've implemented that. But how do we show the user the matrix? Printing them out one by one seems rough but it's all I can think of... Well, I implemented that, as well as the matrix multiplication. I did this in a very rudimentary way, the way we're taught in high school. Right now, the program ask you for the dimensions of the LHS matrix, then you're prompted to input the values of the elements at each location first in the LHS matrix, then the RHS matrix. It then outputs the result of the multiplication to the command line. Fiddling around with the indices was so much fun. /s
+
+
+
+
+
+
+
+
+
+
 
 
 
